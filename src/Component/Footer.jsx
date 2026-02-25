@@ -19,18 +19,22 @@ const links = [
 // FIX: Store icon component references instead of JSX elements in data
 // to avoid shared JSX instance issues across renders.
 const socials = [
-  { Icon: FaGithub, href: "https://github.com/yourusername", label: "GitHub" },
+  { Icon: FaGithub, href: "https://github.com/yustech-alt/", label: "GitHub" },
   {
     Icon: FaLinkedin,
-    href: "https://linkedin.com/in/yusufbalogun",
+    href: "https://linkedin.com/in/yuslabi",
     label: "LinkedIn",
   },
   {
     Icon: FaTwitter,
-    href: "https://twitter.com/yourusername",
+    href: "https://twitter.com/YusufBalog2983",
     label: "Twitter",
   },
-  { Icon: FaEnvelope, href: "mailto:yusuf@email.com", label: "Email" },
+  {
+    Icon: FaEnvelope,
+    href: "mailto:yuslabibalogun2705@gmail.com",
+    label: "Email",
+  },
 ];
 
 const Footer = () => {

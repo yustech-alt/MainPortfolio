@@ -14,30 +14,30 @@ const socials = [
   {
     Icon: FaGithub,
     label: "GitHub",
-    handle: "@yourusername",
-    href: "https://github.com/yourusername",
+    handle: "@YusufBalogun",
+    href: "https://github.com/yustech-alt/",
     color: "hover:text-white",
   },
   {
     Icon: FaLinkedin,
     label: "LinkedIn",
     handle: "@yusufbalogun",
-    href: "https://linkedin.com/in/yusufbalogun",
+    href: "https://linkedin.com/in/yuslabi",
     color: "hover:text-[#0a66c2]",
   },
   {
     Icon: FaTwitter,
     label: "Twitter",
-    handle: "@yourusername",
-    href: "https://twitter.com/yourusername",
+    handle: "@YusufBalog2983",
+    href: "https://twitter.com/YusufBalog2983",
     color: "hover:text-[#1da1f2]",
   },
   {
     Icon: FaEnvelope,
     label: "Email",
-    handle: "yusuf@email.com",
+    handle: "yuslabibalogun2705@gmail.com",
     // FIX: mailto: links don't need target="_blank" — handled separately in JSX
-    href: "mailto:yusuf@email.com",
+    href: "mailto:yuslabibalogun2705@gmail.com",
     color: "hover:text-[#8b5cf6]",
   },
 ];
