@@ -1,6 +1,5 @@
 import { useState } from "react";
 import Loader from "./Component/Loader";
-
 import Navbar from "./Component/Navbar";
 import Hero from "./Component/HeroSection";
 import About from "./Component/About";
@@ -13,14 +12,18 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   return (
-    <main className="bg-[#0a0a0f] text-[#f1f5f9] font-sans">
+    // FIX: Added overflow-x-hidden to prevent horizontal scroll on mobile.
+    // Background glow orbs and wide elements in child sections were bleeding
+    // past the viewport edge, causing the white strip visible on the right side.
+    // FIX: Added min-h-screen so the background color covers the full page.
+    <main className="bg-[#0a0a0f] text-[#f1f5f9] font-sans overflow-x-hidden min-h-screen">
       <Loader onComplete={() => setLoading(false)} />
 
       <div
         className={
-          loading ?
-            "opacity-0 pointer-events-none"
-          : "opacity-100 transition-opacity duration-700"
+          loading
+            ? "opacity-0 pointer-events-none"
+            : "opacity-100 transition-opacity duration-700"
         }
       >
         <Navbar />
